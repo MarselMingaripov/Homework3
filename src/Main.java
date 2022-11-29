@@ -51,5 +51,12 @@ public class Main {
         System.out.println("В школе, где " + totalClasses +
                 " классов, нужно " + totalWhitePaint +
                 " банок белой краски и " + totalBrownPaint + " банок коричневой краски");
+
+        short bananaWeight = 80;
+        short milkWeight = 105;
+        short iceCreamWeight = 100;
+        short eggWeight = 70;
+        double totalWeight = (bananaWeight * 5 + milkWeight * 2 + iceCreamWeight * 2 + eggWeight * 4) / 1000;
+        System.out.println(totalWeight);
     }
 }
