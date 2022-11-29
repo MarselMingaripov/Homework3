@@ -68,6 +68,26 @@ public class Main {
         short averageWeightLoss = (short) ((lowWeightLoss + highWeightLoss) / 2);
         System.out.println(averageWeightLoss);
 
-
+        int mashaSalary = 67760;
+        int denisSalary = 83690;
+        int kristinaSalary = 76230;
+        double newMashaSalary = mashaSalary * 1.1;
+        double newDenisSalary = denisSalary * 1.1;
+        double newKristinaSalary = kristinaSalary * 1.1;
+        int mashaSalaryPerYear = mashaSalary * 12;
+        int denisSalaryPerYear = denisSalary * 12;
+        int kristinaSalaryPerYear = kristinaSalary * 12;
+        double newMashaSalaryPerYear = newMashaSalary * 12;
+        double mashaDifference = newMashaSalaryPerYear - mashaSalaryPerYear;
+        System.out.println("Маша теперь получает " + newMashaSalary + " рублей. Годовой доход вырос на "
+                + mashaDifference + " рублей");
+        double newDenisSalaryPerYear = newDenisSalary * 12;
+        double denisDifference = newDenisSalaryPerYear - denisSalaryPerYear;
+        System.out.println("Денис теперь получает " + newMashaSalary + " рублей. Годовой доход вырос на "
+                + denisDifference + " рублей");
+        double newKristinaSalaryPerYear = newKristinaSalary * 12;
+        double kristinaDifference = newKristinaSalaryPerYear - kristinaSalaryPerYear;
+        System.out.println("Кристина теперь получает " + newMashaSalary + " рублей. Годовой доход вырос на "
+                + kristinaDifference + " рублей");
     }
 }
