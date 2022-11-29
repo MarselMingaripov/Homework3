@@ -23,5 +23,12 @@ public class Main {
         int var13 = 27897;
         byte var14 = 67;
 
+        short lpPupils = 23;
+        short asPupils = 27;
+        short eaPupils = 30;
+        short numberOfLists = 480;
+        short totalListsForPupil = (short) (numberOfLists / (lpPupils + asPupils + eaPupils));
+        System.out.println("На каждого ученика рассчитано " + totalListsForPupil + " листов бумаги");
+
     }
 }
