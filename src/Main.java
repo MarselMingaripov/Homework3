@@ -41,5 +41,53 @@ public class Main {
         int bottlePerMonth = bottlePer3Day * 10;
         System.out.println("За месяц машина произвела бутылок " + bottlePerMonth + " штук");
 
+        byte totalPaint = 120;
+        byte whitePaintPerClass = 2;
+        byte brownPaintPerClass = 4;
+        byte paintPerClass = (byte) (whitePaintPerClass + brownPaintPerClass);
+        byte totalClasses = (byte) (totalPaint / paintPerClass);
+        byte totalWhitePaint = (byte) (whitePaintPerClass * totalClasses);
+        byte totalBrownPaint = (byte) (brownPaintPerClass * totalClasses);
+        System.out.println("В школе, где " + totalClasses +
+                " классов, нужно " + totalWhitePaint +
+                " банок белой краски и " + totalBrownPaint + " банок коричневой краски");
+
+        short bananaWeight = 80;
+        short milkWeight = 105;
+        short iceCreamWeight = 100;
+        short eggWeight = 70;
+        double totalWeight = (bananaWeight * 5 + milkWeight * 2 + iceCreamWeight * 2 + eggWeight * 4) / 1000;
+        System.out.println(totalWeight);
+
+        short lowWeight = 250;
+        short highWeight = 500;
+        short lowWeightLoss = (short) (7000 / lowWeight);
+        System.out.println(lowWeightLoss);
+        short highWeightLoss = (short) (7000 / highWeight);
+        System.out.println(highWeightLoss);
+        short averageWeightLoss = (short) ((lowWeightLoss + highWeightLoss) / 2);
+        System.out.println(averageWeightLoss);
+
+        int mashaSalary = 67760;
+        int denisSalary = 83690;
+        int kristinaSalary = 76230;
+        double newMashaSalary = mashaSalary * 1.1;
+        double newDenisSalary = denisSalary * 1.1;
+        double newKristinaSalary = kristinaSalary * 1.1;
+        int mashaSalaryPerYear = mashaSalary * 12;
+        int denisSalaryPerYear = denisSalary * 12;
+        int kristinaSalaryPerYear = kristinaSalary * 12;
+        double newMashaSalaryPerYear = newMashaSalary * 12;
+        double mashaDifference = newMashaSalaryPerYear - mashaSalaryPerYear;
+        System.out.println("Маша теперь получает " + newMashaSalary + " рублей. Годовой доход вырос на "
+                + mashaDifference + " рублей");
+        double newDenisSalaryPerYear = newDenisSalary * 12;
+        double denisDifference = newDenisSalaryPerYear - denisSalaryPerYear;
+        System.out.println("Денис теперь получает " + newMashaSalary + " рублей. Годовой доход вырос на "
+                + denisDifference + " рублей");
+        double newKristinaSalaryPerYear = newKristinaSalary * 12;
+        double kristinaDifference = newKristinaSalaryPerYear - kristinaSalaryPerYear;
+        System.out.println("Кристина теперь получает " + newMashaSalary + " рублей. Годовой доход вырос на "
+                + kristinaDifference + " рублей");
     }
 }
