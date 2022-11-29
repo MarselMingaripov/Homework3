@@ -58,5 +58,16 @@ public class Main {
         short eggWeight = 70;
         double totalWeight = (bananaWeight * 5 + milkWeight * 2 + iceCreamWeight * 2 + eggWeight * 4) / 1000;
         System.out.println(totalWeight);
+
+        short lowWeight = 250;
+        short highWeight = 500;
+        short lowWeightLoss = (short) (7000 / lowWeight);
+        System.out.println(lowWeightLoss);
+        short highWeightLoss = (short) (7000 / highWeight);
+        System.out.println(highWeightLoss);
+        short averageWeightLoss = (short) ((lowWeightLoss + highWeightLoss) / 2);
+        System.out.println(averageWeightLoss);
+
+
     }
 }
