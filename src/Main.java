@@ -41,5 +41,15 @@ public class Main {
         int bottlePerMonth = bottlePer3Day * 10;
         System.out.println("За месяц машина произвела бутылок " + bottlePerMonth + " штук");
 
+        byte totalPaint = 120;
+        byte whitePaintPerClass = 2;
+        byte brownPaintPerClass = 4;
+        byte paintPerClass = (byte) (whitePaintPerClass + brownPaintPerClass);
+        byte totalClasses = (byte) (totalPaint / paintPerClass);
+        byte totalWhitePaint = (byte) (whitePaintPerClass * totalClasses);
+        byte totalBrownPaint = (byte) (brownPaintPerClass * totalClasses);
+        System.out.println("В школе, где " + totalClasses +
+                " классов, нужно " + totalWhitePaint +
+                " банок белой краски и " + totalBrownPaint + " банок коричневой краски");
     }
 }
