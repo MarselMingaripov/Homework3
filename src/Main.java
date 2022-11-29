@@ -30,5 +30,16 @@ public class Main {
         short totalListsForPupil = (short) (numberOfLists / (lpPupils + asPupils + eaPupils));
         System.out.println("На каждого ученика рассчитано " + totalListsForPupil + " листов бумаги");
 
+        short bottlesPerTwoMinutes = 16;
+        short bottlesPerMinute = (short) (bottlesPerTwoMinutes / 2);
+        short bottlePer20Minutes = (short) (bottlesPerMinute * 20);
+        System.out.println("За 20 минут машина произвела бутылок " + bottlePer20Minutes + " штук");
+        int bottlePerDay = bottlesPerMinute * 60 * 24;
+        System.out.println("За день машина произвела бутылок " + bottlePerDay + " штук");
+        int bottlePer3Day = bottlePerDay * 3;
+        System.out.println("За 3 дня машина произвела бутылок " + bottlePer3Day + " штук");
+        int bottlePerMonth = bottlePer3Day * 10;
+        System.out.println("За месяц машина произвела бутылок " + bottlePerMonth + " штук");
+
     }
 }
